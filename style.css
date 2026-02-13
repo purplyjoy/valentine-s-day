@@ -1,12 +1,9 @@
-body {
+    body {
         background: linear-gradient(135deg, rgba(234, 102, 219, 0.8), rgba(118, 75, 162, 0.8)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><defs><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/></pattern></defs><rect width="1200" height="600" fill="url(%23grid)"/></svg>');
         font-family: 'Arial', sans-serif;
         color: #f6f6f6;
         line-height: 1.6;
         overflow-x: hidden;
-        min-height: 100vh;
-        padding: 10px;
-        box-sizing: border-box;
     }
 
     .greeting-content {
@@ -16,26 +13,25 @@ body {
     }
 
     .greeting-content h1 {
-        font-size: clamp(24px, 6vw, 40px);
+        font-size: 40px;
         text-align: center;
-        margin-bottom: 30px;
+        margin-bottom: 50px;
         font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         color: #c60808;
-        padding: 0 10px;
     }
 
     .mail-container {
         position: relative;
-        width: min(320px, 90vw);
-        height: min(240px, 67.5vw);
+        width: 320px;
+        height: 240px;
         background-color: #ca4853;
-        margin: 50px auto;
+        margin: 100px auto;
         opacity: 1;
     }
 
     .left, .right {
         position: absolute;
-        width: min(223px, 62.9vw);
+        width: 223px;
         height: 4px;
         background-color: #ca4853;
         top: 0;
@@ -57,7 +53,7 @@ body {
 
     .left2, .right2 {
         position: absolute;
-        width: min(226px, 63.7vw);
+        width: 226px;
         height: 4px;
         background-color: #ca4853;
         top: 0;
@@ -79,10 +75,10 @@ body {
 
     .triangle-fill {
         position: absolute;
-        bottom: min(240px, 67.5vw);
+        bottom: 240px;
         left: 5.5px;
-        width: min(310px, 87.4vw);
-        height: min(155px, 43.7vw); 
+        width: 310px;
+        height: 155px; 
         opacity: 0;
         transition: opacity 0.3s ease;
         clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
@@ -90,9 +86,10 @@ body {
         border: 4px solid #bb404a;
     }
 
+
     .mail-btn {
         position: relative;
-        top: 50%;
+        top: 120px;
         left: 50%;
         transform: translate(-50%, -50%);
         width: 80px;
@@ -107,12 +104,12 @@ body {
     .mail-btn::after {
         content: "";
         position: absolute;
-                width: 50px;
+        width: 50px;
         height: 80px;
         background: rgb(246, 59, 59);
         border-radius: 50px 50px 0 0;
         top: 0;
-        left: 50px;
+        left: 40px;
         transform: rotate(-45deg);
         transform-origin: 0 100%;
         z-index: 0;
@@ -120,7 +117,7 @@ body {
 
     .mail-btn::after {
         left: auto;
-        right: 50px;
+        right: 40px;
         transform: rotate(45deg);
         transform-origin: 100% 100%;
     }
@@ -143,8 +140,8 @@ body {
         position: absolute;
         top: 15px;  
         left: 20px; 
-        width: min(280px, 78.9vw);  
-        height: min(140px, 39.4vw); 
+        width: 280px;  
+        height: 140px; 
         background: transparent;
         border: none;
         cursor: pointer;
@@ -163,43 +160,39 @@ body {
 
     .letter-container {
         position: absolute;
-        width: min(450px, 95vw);
-        height: auto;
-        min-height: min(600px, 80vh);
+        width: 450px;
+        height: 600px;
         background: rgb(234, 224, 224);
         z-index: 0;
-        margin: 50px auto;
-        padding: 20px;
-        box-sizing: border-box;
+        margin: 100px auto;
         transition: opacity 1s ease, transform 0.3s ease;
         opacity: 0;
         display: block;
     }
 
     .letter-container h2 {
-        font-size: clamp(28px, 8vw, 40px);
+        font-size: 40px;
         text-align: center;
-        margin-bottom: 30px;
+        margin-bottom: 50px;
         font-family:'Brush Script MT', 'cursive';
         color: #000000;
         opacity: 0;
     }
 
     .letter-container p {
-        font-size: clamp(11px, 2.5vw, 12px);
-        margin-top: -20px;
-        margin-left: 0;
-        margin-right: 0;
+        font-size: 12px;
+        margin-top: -40px;
+        margin-left: 10px;
+        margin-right: 10px;
         text-align: justify;
         font-family:cursive;
         color: #000000; 
         opacity: 0;
-        line-height: 1.5;
     }
 
     .arrow { 
         position: absolute;
-        width: clamp(30px, 8vw, 40px);
+        width: 40px;
         height: auto;
         bottom: 1%;
         right: 3%;
@@ -210,38 +203,33 @@ body {
 
     .letter2 {
         position: absolute;
-        width: min(450px, 95vw);
-        height: auto;
-        min-height: min(600px, 80vh);
+        width: 450px;
+        height: 600px;
         background: rgb(234, 224, 224);
         z-index: 0;
-        margin: 50px auto;
-        padding: 20px;
-        box-sizing: border-box;
+        margin: 100px auto;
         opacity: 0;
         display: none;
     }
 
     .letter2 h2 {
-        font-size: clamp(28px, 8vw, 40px);
+        font-size: 40px;
         text-align: center;
         font-family:'Brush Script MT', 'cursive';
         color: #000000;
     }
 
     .photobooth {
-        position: relative;
-        width: min(400px, 85vw);
+        position: absolute;
+        width: 400px;
         height: auto;
-        margin: 20px auto;
-        display: block;
-        left: 0;
-        top: 0;
+        top: 10%;
+        left: 6%;
     }
 
     .backArrow {
         position: absolute;
-        width: clamp(30px, 8vw, 40px);
+        width: 40px;
         height: auto;
         bottom: 1%;
         left: 3%;
@@ -249,30 +237,28 @@ body {
     }
 
     .letter2 h3 {
-        position: relative;
-        top: auto;
-        left: auto;
+        position: absolute;
+        top: 250px;
+        left: 120px;
         text-align: center;
-        font-size: clamp(24px, 7vw, 40px);
+        font-size: 40px;
         font-family:'Brush Script MT', 'cursive';
         color: #000000;
-        margin: 20px 0;
     }
 
     .plushie {
-        position: relative;
-        width: min(400px, 85vw);
+        position: absolute;
+        width: 400px;
         height: auto;
-        margin: 20px auto;
-        display: block;
-        left: 0;
-        top: 0;
+        top: 50%;
+        left: 6%;
+        align-items: center;
     }
 
     .photo-confetti {
         position: fixed;
-        width: clamp(50px, 15vw, 80px);
-        height: clamp(62.5px, 18.75vw, 100px);
+        width: 80px;
+        height: 100px;
         background: white;
         border: 3px solid #fff;
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
@@ -302,49 +288,4 @@ body {
             opacity: 0;
         }
     }
-
-    /* Mobile-specific adjustments */
-    @media (max-width: 480px) {
-        body {
-            padding: 5px;
-        }
-
-        .greeting-content h1 {
-            margin-bottom: 20px;
-        }
-
-        .mail-container {
-            margin: 30px auto;
-        }
-
-        .letter-container,
-        .letter2 {
-            margin: 20px auto;
-            padding: 15px;
-        }
-
-        .letter-container p {
-            margin-top: -10px;
-        }
-
-        .mail-btn {
-            width: 70px;
-            height: 60px;
-        }
-
-        .mail-btn::before,
-        .mail-btn::after {
-            width: 45px;
-            height: 70px;
-        }
-    }
-
-    /* Tablet adjustments */
-    @media (min-width: 481px) and (max-width: 768px) {
-        .letter-container,
-        .letter2 {
-            margin: 40px auto;
-        }
-    }
-
 
