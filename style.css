@@ -107,12 +107,12 @@ body {
     .mail-btn::after {
         content: "";
         position: absolute;
-        width: 62.5%;
-        height: 114%;
+                width: 50px;
+        height: 80px;
         background: rgb(246, 59, 59);
         border-radius: 50px 50px 0 0;
         top: 0;
-        left: 40px;
+        left: 50px;
         transform: rotate(-45deg);
         transform-origin: 0 100%;
         z-index: 0;
@@ -120,7 +120,7 @@ body {
 
     .mail-btn::after {
         left: auto;
-        right: 40px;
+        right: 50px;
         transform: rotate(45deg);
         transform-origin: 100% 100%;
     }
@@ -346,4 +346,5 @@ body {
             margin: 40px auto;
         }
     }
+
 
