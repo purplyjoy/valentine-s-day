@@ -1,20 +1,21 @@
+    html, body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden; /* prevent horizontal scroll if lines stick out */
+        background-color: #ca4853; /* match your main page color */
+    }
     body {
         background: linear-gradient(135deg, rgba(234, 102, 219, 0.8), rgba(118, 75, 162, 0.8)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><defs><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/></pattern></defs><rect width="1200" height="600" fill="url(%23grid)"/></svg>');
         font-family: 'Arial', sans-serif;
         color: #f6f6f6;
         line-height: 1.6;
         overflow-x: hidden;
-        align-items: center;
-        margin: 0;
-        min-height: 100vh;
-        box-sizing: border-box;
     }
 
-    .greeting-content { 
+    .greeting-content {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 20px;
     }
 
     .greeting-content h1 {
@@ -23,7 +24,6 @@
         margin-bottom: 50px;
         font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         color: #c60808;
-        padding: 0 10px;
     }
 
     .mail-container {
@@ -32,12 +32,11 @@
         height: 240px;
         background-color: #ca4853;
         margin: 100px auto;
-        opacity: 1;
+        opacity: ;
     }
 
     .left, .right {
         position: absolute;
-        width: min(223px, 69.7vw);
         width: 223px;
         height: 4px;
         background-color: #ca4853;
@@ -47,20 +46,20 @@
     }
 
     .left  {
-        left: min(6px, 1.875vw);
+        left: 6px; 
         transform: rotate(45deg); 
         transform-origin: top left;
     }
 
     .right {
-        right: min(6px, 1.875vw);
+        right: 6px;
         transform: rotate(-45deg);
         transform-origin: top right;
     }
 
     .left2, .right2 {
         position: absolute;
-        width: min(226px, 70.625vw);
+        width: 226px;
         height: 4px;
         background-color: #ca4853;
         top: 0;
@@ -82,16 +81,17 @@
 
     .triangle-fill {
         position: absolute;
-        bottom: min(240px, 75vw);
-        left: min(5.5px, 1.72vw);
-        width: min(310px, 96.875vw);
-        height: min(155px, 48.44vw); 
+        bottom: 240px;
+        left: 5.5px;
+        width: 310px;
+        height: 155px; 
         opacity: 0;
         transition: opacity 0.3s ease;
         clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
         background-color: #ca4853;
         border: 4px solid #bb404a;
     }
+
 
     .mail-btn {
         position: relative;
@@ -165,15 +165,12 @@
     }
 
     .letter-container {
-        width: min(450px, 90vw);  
-        max-width: 90%;
-        height: auto; 
-        min-height: min(600px, 150vw);
         position: absolute;
+        width: 450px;
+        height: 600px;
         background: rgb(234, 224, 224);
         z-index: 0;
-        margin: 50px auto;
-        padding: 20px;
+        margin: 100px auto;
         transition: opacity 1s ease, transform 0.3s ease;
         opacity: 0;
         display: block;
@@ -212,21 +209,14 @@
 
     .letter2 {
         position: absolute;
-        width: min(450px, 90vw);
-        max-width: 90%;
-        height: auto; 
-        min-height: min(600px, 150vw);
+        width: 450px;
+        height: 600px;
         background: rgb(234, 224, 224);
         z-index: 0;
-        margin: 50px auto;
-        padding: 20px;
-        box-sizing: border-box;
+        margin: 100px auto;
         opacity: 0;
         display: none;
-        left: 50%; 
-        transform: translateX(-50%); 
     }
-    
 
     .letter2 h2 {
         font-size: 40px;
@@ -304,7 +294,3 @@
             opacity: 0;
         }
     }
-
-
-
-
