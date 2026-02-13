@@ -211,9 +211,11 @@
     }
 
     .letter2 {
+        width: min(450px, 90vw);  
+        max-width: 90%;
+        height: auto; 
+        min-height: min(600px, 150vw);
         position: absolute;
-        width: 450px;
-        height: 600px;
         background: rgb(234, 224, 224);
         z-index: 0;
         margin: 100px auto;
@@ -297,4 +299,5 @@
             opacity: 0;
         }
     }
+
 
