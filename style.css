@@ -182,7 +182,7 @@
     .letter-container p {
         font-size: 12px;
         margin-top: -60px;
-        margin-left: 30px;
+        margin-left: 40px;
         margin-right: 10px;
         text-align: justify;
         font-family:cursive;
@@ -288,6 +288,7 @@
             opacity: 0;
         }
     }
+
 
 
 
