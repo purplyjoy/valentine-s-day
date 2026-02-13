@@ -32,8 +32,6 @@
                 <img src="photobooth.jpg" alt="Photobooth" class="photobooth">
                 <img src="plushie.jpg" alt="Plushie" class="plushie">
 
-                <img src="backArrow.png" alt="Back Arrow" class="backArrow" onclick="back()">
-
                 <button id="bigButton"
                     onclick="popUp()" 
                     style="position: absolute; width: 450px; height: 100px; z-index: 99999;">
@@ -105,9 +103,6 @@
                                 popUp();
                             }
 
-
-                                
-// Array of image URLs - add your own images here
 const imageUrls = [
     'hike.jpg',
     '7128011153_74052392386319_1766762395374.png',
@@ -131,12 +126,12 @@ const imageUrls = [
 ];
 
 function popUp() {
-    // Create multiple photos for confetti effect
+ 
     const photosPerClick = 15;
     
-    // Get random position on screen
+    
     const x = Math.random() * window.innerWidth;
-    const y = Math.random() * window.innerHeight * 0.3; // Start from top 30%
+    const y = Math.random() * window.innerHeight * 0.3; 
     
     for (let i = 0; i < photosPerClick; i++) {
         setTimeout(() => {
@@ -149,12 +144,12 @@ function createPhoto(x, y) {
     const photo = document.createElement('div');
     photo.className = 'photo-confetti';
     
-    // Add image
+
     const img = document.createElement('img');
     img.src = imageUrls[Math.floor(Math.random() * imageUrls.length)];
     photo.appendChild(img);
     
-    // Random starting position
+   
     const offsetX = (Math.random() - 0.5) * 100;
     const offsetY = (Math.random() - 0.5) * 50;
     photo.style.left = (x + offsetX) + 'px';
@@ -166,13 +161,13 @@ function createPhoto(x, y) {
     photo.style.setProperty('--rotate-start', rotateStart + 'deg');
     photo.style.setProperty('--rotate-end', rotateEnd + 'deg');
     
-    // Random animation duration
+
     const duration = 5 + Math.random() * 2;
     photo.style.animationDuration = duration + 's';
     
     document.body.appendChild(photo);
     
-    // Remove photo after animation
+ 
     setTimeout(() => {
         photo.remove();
     }, duration * 1000);
@@ -191,4 +186,5 @@ function createPhoto(x, y) {
         </div>
     </body>
 </html>
+
 
