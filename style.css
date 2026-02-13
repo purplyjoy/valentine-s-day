@@ -10,6 +10,8 @@
         color: #f6f6f6;
         line-height: 1.6;
         overflow-x: hidden;
+        align-items: center;
+        margin: 0;
     }
 
     .greeting-content {
@@ -293,4 +295,5 @@
             transform: translateY(100vh) rotate(var(--rotate-end)) scale(0.8);
             opacity: 0;
         }
+
     }
